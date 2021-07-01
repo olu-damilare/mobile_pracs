@@ -36,7 +36,14 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: quotes.map((quote) => QuoteCard(quote:quote)).toList(),
+        children: quotes.map((quote) => QuoteCard(
+          quote:quote,
+          delete: (){
+              setState((){
+                quotes.remove(quote);
+              });
+          }
+         )).toList(),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: null,
