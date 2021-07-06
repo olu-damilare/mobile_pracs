@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:genesis/quote.dart';
+import 'package:genesis/card/quote.dart';
 import 'quote.dart';
 
 
